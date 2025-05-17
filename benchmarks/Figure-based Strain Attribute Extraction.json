@@ -1,0 +1,2102 @@
+[
+  {
+    "case_id": "MB-S002-02404",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353395",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the lower bound of the optimal growth temperature range for the strain omeliansky?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the lower bound (55).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 55)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The optimal growth temperature range is 55–60°C.",
+          "expected_answer": "<Answer>55</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "This bacterium grows best between 30°C and 40°C.",
+          "expected_answer": "<Answer>30</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The strain grows well at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The growth range is 20–80°C, with no optimal temperature given.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>45</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-02405",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353396",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the upper bound of the optimal growth temperature range for the strain omeliansky?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the upper bound (60).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 60)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Optimal growth occurs between 55°C and 60°C.",
+          "expected_answer": "<Answer>60</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "This species grows best at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "It grows in the range of 20–80°C, with no optimal range mentioned.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Maximum growth rate is observed between 30°C and 50°C under aerobic conditions.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>45</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-02406",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353398",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal growth temperature for the strain omeliansky?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of a single optimal growth temperature.\n2. Look for phrases such as \"optimal growth temperature\", \"grows best at\", \"optimum temperature\", \"grows is most rapid at\".\n\nHow to determine the value:\n- Only use the value if a single optimal temperature is clearly stated.\n- **Do not use ranges here—this field is for single values only.**\n- **Output must be numeric value(s) only, without any units.**\n- If no optimal temperature is provided, answer \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "This species grows best at 45°C.",
+          "expected_answer": "<Answer>45</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "Growth occurs between 20°C and 60°C, with no single optimum reported.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The strain grows rapidly at 50°C.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>45</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-02471",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353489",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the lower bound of the optimal growth temperature range for the strain kuznetsov?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the lower bound (55).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 55)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The optimal growth temperature range is 55–60°C.",
+          "expected_answer": "<Answer>55</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "This bacterium grows best between 30°C and 40°C.",
+          "expected_answer": "<Answer>30</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The strain grows well at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The growth range is 20–80°C, with no optimal temperature given.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>37</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-02472",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353491",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the upper bound of the optimal growth temperature range for the strain kuznetsov?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the upper bound (60).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 60)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Optimal growth occurs between 55°C and 60°C.",
+          "expected_answer": "<Answer>60</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "This species grows best at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "It grows in the range of 20–80°C, with no optimal range mentioned.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Maximum growth rate is observed between 30°C and 50°C under aerobic conditions.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>37</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-02473",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353492",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal growth temperature for the strain kuznetsov?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of a single optimal growth temperature.\n2. Look for phrases such as \"optimal growth temperature\", \"grows best at\", \"optimum temperature\", \"grows is most rapid at\".\n\nHow to determine the value:\n- Only use the value if a single optimal temperature is clearly stated.\n- **Do not use ranges here—this field is for single values only.**\n- **Output must be numeric value(s) only, without any units.**\n- If no optimal temperature is provided, answer \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "This species grows best at 45°C.",
+          "expected_answer": "<Answer>45</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "Growth occurs between 20°C and 60°C, with no single optimum reported.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The strain grows rapidly at 50°C.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>37</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S004-02615",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353715",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S004",
+        "image_index": [
+          "S004_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for growth for the strain Blotevogel and Fischer 1988?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for NaCl concentration ranges related to growth (not optimal growth)\n- Look for terms like 'growth range', 'can grow', 'tolerates', or 'NaCl range'\n- Important: Must be growth concentration, not optimal concentration\n- Double-check not to confuse growth NaCl range with optimal NaCl range\n\nStep 2 - Determine the minimum concentration and convert units:\n- If a range is provided, use the lower limit (e.g., for '0.5% to 2.0% NaCl', use 0.5%)\n- If only a single concentration is given, use that value\n- Convert the value to mol/L:\n  - Percentages: 1% NaCl ≈ 0.171 mol/L\n  - g/L: 58.44 g NaCl = 1 mol\n- Special cases:\n  - If the organism can grow without NaCl, answer \"0\"\n  - If no information is found, return \"not provided\"\n- Ensure final answer is a number (no units), in mol/L, rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for growth?",
+          "text": "Growth was observed in NaCl concentrations ranging from 1% to 10%.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The organism can grow in 3–5% NaCl.",
+          "text": "The organism can grow in 3–5% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The strain can grow without any added NaCl.",
+          "text": "The strain can grow without any added NaCl.",
+          "expected_answer": "<Answer>0</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed at 2% NaCl.",
+          "text": "Optimal growth was observed at 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S004-02661",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353779",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S004",
+        "image_index": [
+          "S004_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What factors inhibit the organism's growth for the strain Blotevogel and Fischer 1988?",
+      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (1) (10%)\", \"nitrate (1) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (1)` if inhibitory without dose.\n   - Use `name (1) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n",
+      "few_shot_examples": [
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "The bacterium's growth is inhibited by high concentrations of NaCl and low pH.",
+          "expected_answer": "<Answer>['NaCl (1) (10%)']</Answer>"
+        },
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "Growth is suppressed by the presence of high concentrations of nitrate.",
+          "expected_answer": "<Answer>['nitrate (1) (10 mM)']</Answer>"
+        },
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "Oxygen inhibits the growth of this anaerobic bacterium.",
+          "expected_answer": "<Answer>['O₂ (1)']</Answer>"
+        }
+      ],
+      "expected_answer_type": "entity list",
+      "expected_answer": "<Answer>['NaCl (1)', 'O2 (1)']</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S004-02662",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.353780",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S004",
+        "image_index": [
+          "S004_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Which agents inhibit or reduce the growth rate of the organism for the strain Blotevogel and Fischer 1988?",
+      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (1) (10%)\", \"nitrate (1) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (1)` if inhibitory without dose.\n   - Use `name (1) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n",
+      "few_shot_examples": [
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "The bacterium's growth is inhibited by high concentrations of NaCl and low pH.",
+          "expected_answer": "<Answer>['NaCl (1) (10%)']</Answer>"
+        },
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "Growth is suppressed by the presence of high concentrations of nitrate.",
+          "expected_answer": "<Answer>['nitrate (1) (10 mM)']</Answer>"
+        },
+        {
+          "question": "What factors inhibit the organism's growth?",
+          "text": "Oxygen inhibits the growth of this anaerobic bacterium.",
+          "expected_answer": "<Answer>['O₂ (1)']</Answer>"
+        }
+      ],
+      "expected_answer_type": "entity list",
+      "expected_answer": "<Answer>['NaCl (1)', 'O2 (1)']</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-03948",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.355964",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the absolute minimum temperature for any growth to occur for the strain RC/ER?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of the absolute minimum growth temperature.\n2. Look for phrases such as \"minimum growth temperature\", \"lowest temperature for growth\", or \"growth occurs from X°C\".\n3. Ensure the temperature refers to growth, not optimal conditions.\n4. Ignore values that only refer to optimal temperatures.\n\nHow to determine the value:\n- If a single minimum temperature is stated, extract that number (e.g., \"10°C\" → 10).\n- If a growth temperature range is given, extract the lower bound (e.g., \"10–45°C\" → 10).\n- **Output must be a numeric value only**, without any units.\n- If no minimum growth temperature is clearly stated, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "Growth was observed starting from 15°C and ceased above 50°C.",
+          "expected_answer": "<Answer>15</Answer>"
+        },
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "Growth occurs at temperatures as low as 5°C.",
+          "expected_answer": "<Answer>5</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>30</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-03949",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.355965",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the absolute maximum temperature for any growth to occur for the strain RC/ER?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of the absolute maximum growth temperature.\n2. Look for phrases such as \"maximum growth temperature\", \"highest temperature for growth\", or \"upper growth limit\".\n3. Ensure the temperature refers to growth, not optimal conditions.\n4. Ignore values that only refer to optimal temperatures.\n\nHow to determine the value:\n- If a single maximum temperature is stated, extract that number.\n- If a growth temperature range is given, extract the upper bound (e.g., \"10–45°C\" → 45).\n- **Output must be a numeric value only, without any units and information**.\n- If no maximum growth temperature is clearly stated, answer \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "This strain grows between 10°C and 45°C.",
+          "expected_answer": "<Answer>45</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "Growth occurs up to 60°C, with optimal growth at 45°C.",
+          "expected_answer": "<Answer>60</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "Growth was observed in the range of 20–75°C.",
+          "expected_answer": "<Answer>75</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>45</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-03958",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.355977",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for growth for the strain RC/ER?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for NaCl concentration ranges related to growth (not optimal growth)\n- Look for terms like 'growth range', 'can grow', 'tolerates', or 'NaCl range'\n- Important: Must be growth concentration, not optimal concentration\n- Double-check not to confuse growth NaCl range with optimal NaCl range\n\nStep 2 - Determine the minimum concentration and convert units:\n- If a range is provided, use the lower limit (e.g., for '0.5% to 2.0% NaCl', use 0.5%)\n- If only a single concentration is given, use that value\n- Convert the value to mol/L:\n  - Percentages: 1% NaCl ≈ 0.171 mol/L\n  - g/L: 58.44 g NaCl = 1 mol\n- Special cases:\n  - If the organism can grow without NaCl, answer \"0\"\n  - If no information is found, return \"not provided\"\n- Ensure final answer is a number (no units), in mol/L, rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for growth?",
+          "text": "Growth was observed in NaCl concentrations ranging from 1% to 10%.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The organism can grow in 3–5% NaCl.",
+          "text": "The organism can grow in 3–5% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The strain can grow without any added NaCl.",
+          "text": "The strain can grow without any added NaCl.",
+          "expected_answer": "<Answer>0</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed at 2% NaCl.",
+          "text": "Optimal growth was observed at 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-03959",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.355978",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum NaCl concentration for growth for the strain RC/ER?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Same method as minimum growth NaCl\n- Look for the highest possible value the organism can tolerate (not optimal)\n\nStep 2 - Determine the maximum concentration and convert units:\n- From range: take the upper limit\n- From multiple conditions: pick the highest maximum across them\n- Unit conversion:\n  - Percentages: 1% ≈ 0.171 mol/L\n  - g/L: divide by 58.44\n- If no information found: return \"not provided\"\n- Final answer should be in mol/L, rounded to 3 decimals, and exclude unit text\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum NaCl concentration for growth?",
+          "text": "This species tolerates NaCl up to 15%.",
+          "expected_answer": "<Answer>2.565</Answer>"
+        },
+        {
+          "question": "The growth range is 0.5–5.0% NaCl.",
+          "text": "The growth range is 0.5–5.0% NaCl.",
+          "expected_answer": "<Answer>0.855</Answer>"
+        },
+        {
+          "question": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "text": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "expected_answer": "<Answer>1.711</Answer>"
+        },
+        {
+          "question": "The optimum concentration is 2% NaCl.",
+          "text": "The optimum concentration is 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.684462696783025</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-04015",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356059",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the absolute minimum temperature for any growth to occur for the strain Delta RC?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of the absolute minimum growth temperature.\n2. Look for phrases such as \"minimum growth temperature\", \"lowest temperature for growth\", or \"growth occurs from X°C\".\n3. Ensure the temperature refers to growth, not optimal conditions.\n4. Ignore values that only refer to optimal temperatures.\n\nHow to determine the value:\n- If a single minimum temperature is stated, extract that number (e.g., \"10°C\" → 10).\n- If a growth temperature range is given, extract the lower bound (e.g., \"10–45°C\" → 10).\n- **Output must be a numeric value only**, without any units.\n- If no minimum growth temperature is clearly stated, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "Growth was observed starting from 15°C and ceased above 50°C.",
+          "expected_answer": "<Answer>15</Answer>"
+        },
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the absolute minimum temperature for any growth to occur?",
+          "text": "Growth occurs at temperatures as low as 5°C.",
+          "expected_answer": "<Answer>5</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>30</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-04016",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356061",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the absolute maximum temperature for any growth to occur for the strain Delta RC?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of the absolute maximum growth temperature.\n2. Look for phrases such as \"maximum growth temperature\", \"highest temperature for growth\", or \"upper growth limit\".\n3. Ensure the temperature refers to growth, not optimal conditions.\n4. Ignore values that only refer to optimal temperatures.\n\nHow to determine the value:\n- If a single maximum temperature is stated, extract that number.\n- If a growth temperature range is given, extract the upper bound (e.g., \"10–45°C\" → 45).\n- **Output must be a numeric value only, without any units and information**.\n- If no maximum growth temperature is clearly stated, answer \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "This strain grows between 10°C and 45°C.",
+          "expected_answer": "<Answer>45</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "Growth occurs up to 60°C, with optimal growth at 45°C.",
+          "expected_answer": "<Answer>60</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the absolute maximum temperature for any growth to occur?",
+          "text": "Growth was observed in the range of 20–75°C.",
+          "expected_answer": "<Answer>75</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>45</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-04025",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356072",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for growth for the strain Delta RC?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for NaCl concentration ranges related to growth (not optimal growth)\n- Look for terms like 'growth range', 'can grow', 'tolerates', or 'NaCl range'\n- Important: Must be growth concentration, not optimal concentration\n- Double-check not to confuse growth NaCl range with optimal NaCl range\n\nStep 2 - Determine the minimum concentration and convert units:\n- If a range is provided, use the lower limit (e.g., for '0.5% to 2.0% NaCl', use 0.5%)\n- If only a single concentration is given, use that value\n- Convert the value to mol/L:\n  - Percentages: 1% NaCl ≈ 0.171 mol/L\n  - g/L: 58.44 g NaCl = 1 mol\n- Special cases:\n  - If the organism can grow without NaCl, answer \"0\"\n  - If no information is found, return \"not provided\"\n- Ensure final answer is a number (no units), in mol/L, rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for growth?",
+          "text": "Growth was observed in NaCl concentrations ranging from 1% to 10%.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The organism can grow in 3–5% NaCl.",
+          "text": "The organism can grow in 3–5% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The strain can grow without any added NaCl.",
+          "text": "The strain can grow without any added NaCl.",
+          "expected_answer": "<Answer>0</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed at 2% NaCl.",
+          "text": "Optimal growth was observed at 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.427789185489391</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-04026",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356074",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum NaCl concentration for growth for the strain Delta RC?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Same method as minimum growth NaCl\n- Look for the highest possible value the organism can tolerate (not optimal)\n\nStep 2 - Determine the maximum concentration and convert units:\n- From range: take the upper limit\n- From multiple conditions: pick the highest maximum across them\n- Unit conversion:\n  - Percentages: 1% ≈ 0.171 mol/L\n  - g/L: divide by 58.44\n- If no information found: return \"not provided\"\n- Final answer should be in mol/L, rounded to 3 decimals, and exclude unit text\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum NaCl concentration for growth?",
+          "text": "This species tolerates NaCl up to 15%.",
+          "expected_answer": "<Answer>2.565</Answer>"
+        },
+        {
+          "question": "The growth range is 0.5–5.0% NaCl.",
+          "text": "The growth range is 0.5–5.0% NaCl.",
+          "expected_answer": "<Answer>0.855</Answer>"
+        },
+        {
+          "question": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "text": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "expected_answer": "<Answer>1.711</Answer>"
+        },
+        {
+          "question": "The optimum concentration is 2% NaCl.",
+          "text": "The optimum concentration is 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>1.11225188227242</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S025-04346",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356555",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S025",
+        "image_index": [
+          "S025_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum pH for growth for the strain C2J?",
+      "note": "Step 1 - Identify the growth pH range:\n1. Search for phrases like \"minimum pH\", \"pH range\", or \"grows at pH as low as\".\n2. Ensure the value refers to growth pH, not optimal pH.\n3. Do not confuse with optimal or preferred pH values.\n\nStep 2 - Determine the minimum pH:\n- If a single minimum pH is given, use that number.\n- If a pH range is provided (e.g., \"pH 4.0–9.0\"), use the lower bound (→ 4.0).\n- Output only the numeric value, no units or labels.\n- If no value is given, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum pH for growth?",
+          "text": "This strain grows in a pH range of 4.0 to 8.5, with optimal growth at 7.0.",
+          "expected_answer": "<Answer>4.0</Answer>"
+        },
+        {
+          "question": "What is the minimum pH for growth?",
+          "text": "The organism grows well in acidic conditions, with growth beginning at pH 5.5.",
+          "expected_answer": "<Answer>5.5</Answer>"
+        },
+        {
+          "question": "What is the minimum pH for growth?",
+          "text": "Optimal growth was observed at pH 6.5–7.5.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>5</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S025-04347",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.356556",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S025",
+        "image_index": [
+          "S025_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum pH for growth for the strain C2J?",
+      "note": "Step 1 - Identify the growth pH range:\n1. Search for phrases like \"maximum pH\", \"pH range\", or \"grows at pH up to\".\n2. Ensure the value refers to growth pH, not optimal pH.\n3. Do not confuse with optimal or preferred pH values.\n\nStep 2 - Determine the maximum pH:\n- If a single maximum pH is given, use that number.\n- If a pH range is provided (e.g., \"pH 4.0–9.0\"), use the upper bound (→ 9.0).\n- Output only the numeric value, no units or labels.\n- If no value is given, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "Growth was detected in the pH range 5.0 to 9.2, with an optimum at pH 7.0.",
+          "expected_answer": "<Answer>9.2</Answer>"
+        },
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "The strain can tolerate pH up to 8.5 under anaerobic conditions.",
+          "expected_answer": "<Answer>8.5</Answer>"
+        },
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "Optimal pH is 6.8–7.4, with no other pH range provided.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>7.5</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S029-04670",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.357055",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S029",
+        "image_index": [
+          "S029_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What are the cell surface structures of the microorganism for the strain Ace-2?",
+      "note": "Extraction Instructions:\n\n1. Identify explicit mentions of **cell surface components** such as:\n   - Flagella (e.g., polar, lateral, peritrichous)\n   - Pili, fimbriae\n   - Capsule, slime layer\n   - S-layer\n   - Outer membrane\n   - Spores (if considered a surface feature)\n   - Cell wall details (e.g., “typical Gram-negative envelope”)\n\n2. Include structural details and descriptors when available (e.g., “peritrichous flagella”, “thick capsule”).\n\n3. If electron microscopy is referenced, extract relevant structural observations.\n\n4. **Output Format**:\n   - Return all identified structures as a **comma-separated list**\n   - Example: `capsule, peritrichous flagella, outer membrane`\n\n5. If no surface structures are mentioned, return: **\"not provided\"**\n",
+      "few_shot_examples": [
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Cells possess a thick capsule and display lateral flagella for motility.",
+          "expected_answer": "<Answer>capsule, lateral flagella</Answer>"
+        },
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Electron microscopy revealed an S-layer and pili surrounding the outer membrane.",
+          "expected_answer": "<Answer>S-layer, pili, outer membrane</Answer>"
+        },
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Surface details were not included in the species description.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "descriptive",
+      "expected_answer": "<Answer>S layers and external fiber layers, No flagella or pili</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05335",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358212",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the lower bound of the optimal growth temperature range for the strain M7?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the lower bound (55).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 55)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The optimal growth temperature range is 55–60°C.",
+          "expected_answer": "<Answer>55</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "This bacterium grows best between 30°C and 40°C.",
+          "expected_answer": "<Answer>30</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The strain grows well at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the lower bound of the optimal growth temperature range?",
+          "text": "The growth range is 20–80°C, with no optimal temperature given.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>80</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05336",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358213",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the upper bound of the optimal growth temperature range for the strain M7?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of OPTIMAL growth temperature (not general growth range).\n2. Look for phrases such as:\n   - \"optimal growth temperature\"\n   - \"optimum temperature\"\n   - \"optimal temperature range\"\n   - \"temperature optimum\"\n   - \"grows best at\"\n   - \"grows is most rapid at\"\n   - \"maximum growth rate at\"\n   - \"highest growth rate observed at\"\n   - \"preferred growth temperature\"\n\nHow to determine the value:\n- If a single optimal temperature is given (e.g., \"grows optimally at 37°C\"), use that exact value for both lower and upper bounds.\n- If an optimal RANGE is given (e.g., \"optimal temperature range of 55–60°C\"), extract the upper bound (60).\n- DO NOT use general growth range (e.g., \"can grow between 20-80°C\") unless explicitly stated as optimal.\n- If multiple optimal temperatures are given for different conditions, prioritize the condition described as standard or default.\n\nOutput requirements:\n- **Output must be a single numeric value only** (e.g., 60)\n- Do NOT include units (°C, K, etc.)\n- Do NOT include ranges, text explanations or other information\n- If no optimal temperature is clearly stated, answer \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Optimal growth occurs between 55°C and 60°C.",
+          "expected_answer": "<Answer>60</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "This species grows best at 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "It grows in the range of 20–80°C, with no optimal range mentioned.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the upper bound of the optimal growth temperature range?",
+          "text": "Maximum growth rate is observed between 30°C and 50°C under aerobic conditions.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>80</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05337",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358214",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal growth temperature for the strain M7?",
+      "note": "How to locate the information:\n1. Search for explicit mentions of a single optimal growth temperature.\n2. Look for phrases such as \"optimal growth temperature\", \"grows best at\", \"optimum temperature\", \"grows is most rapid at\".\n\nHow to determine the value:\n- Only use the value if a single optimal temperature is clearly stated.\n- **Do not use ranges here—this field is for single values only.**\n- **Output must be numeric value(s) only, without any units.**\n- If no optimal temperature is provided, answer \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The optimal growth temperature is 37°C.",
+          "expected_answer": "<Answer>37</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "This species grows best at 45°C.",
+          "expected_answer": "<Answer>45</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "Growth occurs between 20°C and 60°C, with no single optimum reported.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "What is the optimal growth temperature?",
+          "text": "The strain grows rapidly at 50°C.",
+          "expected_answer": "<Answer>50</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>80</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05345",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358226",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for optimal growth for the strain M7?",
+      "note": "First locate optimal NaCl concentration information:\n- Search for terms like: optimal/optimum/preferred/best growth/grows is most rapid at [with] NaCl/salt\n- Focus only on OPTIMAL concentration, not general tolerance\n- Useful phrases: grows best at X%, maximum growth at Y%, etc.\n\nThen determine the lower bound:\n- Single value: use it directly\n- Range: use the lower value\n- Multiple entries: separate values by semicolon\n\nConvert units to mol/L (rounded to 3 decimals):\n- % NaCl: multiply by 0.171\n- g/L: divide by 58.44\n- mol/L: use directly\n- mM: multiply by 0.001\n- ppt: multiply by 0.171\n\nSpecial cases:\n- \"salt not required\": return \"0\"\n- Only mentions \"salt-tolerant\" without optimum: return \"not provided\"\n- \"about X\" or \"approximately X\": use X\n- \"X±Y\": use X-Y\n- If no optimal info: return \"not provided\"\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for optimal growth?",
+          "text": "Optimal growth occurred between 2% and 5% NaCl.",
+          "expected_answer": "<Answer>0.342</Answer>"
+        },
+        {
+          "question": "The bacterium grows best at 1–3% NaCl.",
+          "text": "The bacterium grows best at 1–3% NaCl.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The optimal NaCl concentration is 100 mM.",
+          "text": "The optimal NaCl concentration is 100 mM.",
+          "expected_answer": "<Answer>0.1</Answer>"
+        },
+        {
+          "question": "This is a salt-tolerant strain.",
+          "text": "This is a salt-tolerant strain.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        },
+        {
+          "question": "Optimal growth at about 2% NaCl.",
+          "text": "Optimal growth at about 2% NaCl.",
+          "expected_answer": "<Answer>0.342</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.427789185489391</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05346",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358228",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum NaCl concentration for optimal growth for the strain M7?",
+      "note": "Locate the optimal NaCl concentration using same cues as in minimum optimal NaCl.\n\nThen determine the upper bound:\n- Single value: use directly\n- Range: use upper value\n- Multiple values: use semicolon-separated list\n\nUnit conversion (round to 3 decimals):\n- % → ×0.171\n- g/L → ÷58.44\n- mol/L → as is\n- mM → ×0.001\n- ppt → ×0.171\n\nSpecial handling:\n- \"salt not required\": return \"0\"\n- No optimal concentration: return \"not provided\"\n- \"X±Y\": return X+Y\n- Ensure numeric output without units\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum NaCl concentration for optimal growth?",
+          "text": "Optimal growth was observed from 2% to 5% NaCl.",
+          "expected_answer": "<Answer>0.855</Answer>"
+        },
+        {
+          "question": "Best growth observed between 1–3% NaCl.",
+          "text": "Best growth observed between 1–3% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The optimum is around 4% NaCl.",
+          "text": "The optimum is around 4% NaCl.",
+          "expected_answer": "<Answer>0.684</Answer>"
+        },
+        {
+          "question": "The strain grows best at 2±1% NaCl.",
+          "text": "The strain grows best at 2±1% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "Salt not required.",
+          "text": "Salt not required.",
+          "expected_answer": "<Answer>0</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.427789185489391</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-05347",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358229",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal NaCl concentration for growth for the strain M7?",
+      "note": "Locate the optimal NaCl concentration (center value), not growth range.\n\nStep 1 - Identify the optimal concentration:\n- Search terms: optimal/optimum/preferred/best growth/grows is most rapid at [with] NaCl/salt\n- Typical phrases: \"grows best at\", \"optimum concentration\", \"maximum growth observed at\"\n- Must be OPTIMAL NaCl, not growth range\n- If a range is given (e.g., 2–5%),  list all separated by semicolon.\n\nStep 2 - Convert value to mol/L:\n- Percentages: ×0.171\n- g/L: ÷58.44\n- mol/L: use directly\n- mM: ×0.001\n- ppt: ×0.171\n\nSpecial handling:\n- \"salt not required\"/\"non-halophile\": return \"0\"\n- If only salt tolerance is mentioned, not optimal: return \"not provided\"\n- If \"X±Y\": use X as center\n- If multiple conditions give different optimal values: return all center values separated by semicolon\n- If only one value is mentioned (e.g., \"optimum 3%\"), use it directly\n\nFinal output:\n- Must be a number (no unit)\n- In mol/L\n- Rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal NaCl concentration for growth?",
+          "text": "Grows best at 2% NaCl.",
+          "expected_answer": "<Answer>0.342</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed in the range 1–3%.",
+          "text": "Optimal growth was observed in the range 1–3%.",
+          "expected_answer": "<Answer>0.171;0.513</Answer>"
+        },
+        {
+          "question": "Optimum concentration is 100 mM.",
+          "text": "Optimum concentration is 100 mM.",
+          "expected_answer": "<Answer>0.1</Answer>"
+        },
+        {
+          "question": "Only salt tolerance mentioned.",
+          "text": "Only salt tolerance mentioned.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.427789185489391</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S042-05604",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.358902",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S042",
+        "image_index": [
+          "S042_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What are the cell surface structures of the microorganism for the strain JAL-1?",
+      "note": "Extraction Instructions:\n\n1. Identify explicit mentions of **cell surface components** such as:\n   - Flagella (e.g., polar, lateral, peritrichous)\n   - Pili, fimbriae\n   - Capsule, slime layer\n   - S-layer\n   - Outer membrane\n   - Spores (if considered a surface feature)\n   - Cell wall details (e.g., “typical Gram-negative envelope”)\n\n2. Include structural details and descriptors when available (e.g., “peritrichous flagella”, “thick capsule”).\n\n3. If electron microscopy is referenced, extract relevant structural observations.\n\n4. **Output Format**:\n   - Return all identified structures as a **comma-separated list**\n   - Example: `capsule, peritrichous flagella, outer membrane`\n\n5. If no surface structures are mentioned, return: **\"not provided\"**\n",
+      "few_shot_examples": [
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Cells possess a thick capsule and display lateral flagella for motility.",
+          "expected_answer": "<Answer>capsule, lateral flagella</Answer>"
+        },
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Electron microscopy revealed an S-layer and pili surrounding the outer membrane.",
+          "expected_answer": "<Answer>S-layer, pili, outer membrane</Answer>"
+        },
+        {
+          "question": "What are the cell surface structures of the microorganism?",
+          "text": "Surface details were not included in the species description.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "descriptive",
+      "expected_answer": "<Answer>an osmotically fragile cell wall and a complex flagellar system</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S046-06065",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.359622",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S046",
+        "image_index": [
+          "S046_I001"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for growth for the strain PL-12/M?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for NaCl concentration ranges related to growth (not optimal growth)\n- Look for terms like 'growth range', 'can grow', 'tolerates', or 'NaCl range'\n- Important: Must be growth concentration, not optimal concentration\n- Double-check not to confuse growth NaCl range with optimal NaCl range\n\nStep 2 - Determine the minimum concentration and convert units:\n- If a range is provided, use the lower limit (e.g., for '0.5% to 2.0% NaCl', use 0.5%)\n- If only a single concentration is given, use that value\n- Convert the value to mol/L:\n  - Percentages: 1% NaCl ≈ 0.171 mol/L\n  - g/L: 58.44 g NaCl = 1 mol\n- Special cases:\n  - If the organism can grow without NaCl, answer \"0\"\n  - If no information is found, return \"not provided\"\n- Ensure final answer is a number (no units), in mol/L, rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for growth?",
+          "text": "Growth was observed in NaCl concentrations ranging from 1% to 10%.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The organism can grow in 3–5% NaCl.",
+          "text": "The organism can grow in 3–5% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The strain can grow without any added NaCl.",
+          "text": "The strain can grow without any added NaCl.",
+          "expected_answer": "<Answer>0</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed at 2% NaCl.",
+          "text": "Optimal growth was observed at 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.1</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S046-06066",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.359624",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S046",
+        "image_index": [
+          "S046_I001"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum NaCl concentration for growth for the strain PL-12/M?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Same method as minimum growth NaCl\n- Look for the highest possible value the organism can tolerate (not optimal)\n\nStep 2 - Determine the maximum concentration and convert units:\n- From range: take the upper limit\n- From multiple conditions: pick the highest maximum across them\n- Unit conversion:\n  - Percentages: 1% ≈ 0.171 mol/L\n  - g/L: divide by 58.44\n- If no information found: return \"not provided\"\n- Final answer should be in mol/L, rounded to 3 decimals, and exclude unit text\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum NaCl concentration for growth?",
+          "text": "This species tolerates NaCl up to 15%.",
+          "expected_answer": "<Answer>2.565</Answer>"
+        },
+        {
+          "question": "The growth range is 0.5–5.0% NaCl.",
+          "text": "The growth range is 0.5–5.0% NaCl.",
+          "expected_answer": "<Answer>0.855</Answer>"
+        },
+        {
+          "question": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "text": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "expected_answer": "<Answer>1.711</Answer>"
+        },
+        {
+          "question": "The optimum concentration is 2% NaCl.",
+          "text": "The optimum concentration is 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>1.2</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S047-06128",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.359720",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S047",
+        "image_index": [
+          "S047_I002"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum pH for growth for the strain B-1?",
+      "note": "Step 1 - Identify the growth pH range:\n1. Search for phrases like \"maximum pH\", \"pH range\", or \"grows at pH up to\".\n2. Ensure the value refers to growth pH, not optimal pH.\n3. Do not confuse with optimal or preferred pH values.\n\nStep 2 - Determine the maximum pH:\n- If a single maximum pH is given, use that number.\n- If a pH range is provided (e.g., \"pH 4.0–9.0\"), use the upper bound (→ 9.0).\n- Output only the numeric value, no units or labels.\n- If no value is given, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "Growth was detected in the pH range 5.0 to 9.2, with an optimum at pH 7.0.",
+          "expected_answer": "<Answer>9.2</Answer>"
+        },
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "The strain can tolerate pH up to 8.5 under anaerobic conditions.",
+          "expected_answer": "<Answer>8.5</Answer>"
+        },
+        {
+          "question": "What is the maximum pH for growth?",
+          "text": "Optimal pH is 6.8–7.4, with no other pH range provided.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>8.5</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S047-06132",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.359726",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S047",
+        "image_index": [
+          "S047_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the minimum NaCl concentration for growth for the strain B-1?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for NaCl concentration ranges related to growth (not optimal growth)\n- Look for terms like 'growth range', 'can grow', 'tolerates', or 'NaCl range'\n- Important: Must be growth concentration, not optimal concentration\n- Double-check not to confuse growth NaCl range with optimal NaCl range\n\nStep 2 - Determine the minimum concentration and convert units:\n- If a range is provided, use the lower limit (e.g., for '0.5% to 2.0% NaCl', use 0.5%)\n- If only a single concentration is given, use that value\n- Convert the value to mol/L:\n  - Percentages: 1% NaCl ≈ 0.171 mol/L\n  - g/L: 58.44 g NaCl = 1 mol\n- Special cases:\n  - If the organism can grow without NaCl, answer \"0\"\n  - If no information is found, return \"not provided\"\n- Ensure final answer is a number (no units), in mol/L, rounded to 3 decimal places\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the minimum NaCl concentration for growth?",
+          "text": "Growth was observed in NaCl concentrations ranging from 1% to 10%.",
+          "expected_answer": "<Answer>0.171</Answer>"
+        },
+        {
+          "question": "The organism can grow in 3–5% NaCl.",
+          "text": "The organism can grow in 3–5% NaCl.",
+          "expected_answer": "<Answer>0.513</Answer>"
+        },
+        {
+          "question": "The strain can grow without any added NaCl.",
+          "text": "The strain can grow without any added NaCl.",
+          "expected_answer": "<Answer>0</Answer>"
+        },
+        {
+          "question": "Optimal growth was observed at 2% NaCl.",
+          "text": "Optimal growth was observed at 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.2</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S047-06133",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.359728",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S047",
+        "image_index": [
+          "S047_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the maximum NaCl concentration for growth for the strain B-1?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Same method as minimum growth NaCl\n- Look for the highest possible value the organism can tolerate (not optimal)\n\nStep 2 - Determine the maximum concentration and convert units:\n- From range: take the upper limit\n- From multiple conditions: pick the highest maximum across them\n- Unit conversion:\n  - Percentages: 1% ≈ 0.171 mol/L\n  - g/L: divide by 58.44\n- If no information found: return \"not provided\"\n- Final answer should be in mol/L, rounded to 3 decimals, and exclude unit text\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the maximum NaCl concentration for growth?",
+          "text": "This species tolerates NaCl up to 15%.",
+          "expected_answer": "<Answer>2.565</Answer>"
+        },
+        {
+          "question": "The growth range is 0.5–5.0% NaCl.",
+          "text": "The growth range is 0.5–5.0% NaCl.",
+          "expected_answer": "<Answer>0.855</Answer>"
+        },
+        {
+          "question": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "text": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "expected_answer": "<Answer>1.711</Answer>"
+        },
+        {
+          "question": "The optimum concentration is 2% NaCl.",
+          "text": "The optimum concentration is 2% NaCl.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>2.5</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S066-08514",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.363893",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S066",
+        "image_index": [
+          "S066_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal growth rate of the microorganism for the strain RFM-1?",
+      "note": "This is a two-step task.\n\nStep 1 – Identify the best growth rate:\n- Look for terms like 'growth rate', 'specific growth rate', 'μ', or 'doubling time'.\n- Only extract the *optimal* growth rate, not all values.\n- If multiple growth rates are reported under different conditions, select the one under the optimal or highest performance condition.\n- If only one rate is given, use it.\n\nStep 2 – Convert and format:\n- If the growth rate is provided in h⁻¹, use the value directly.\n- If the rate is in min⁻¹, convert to h⁻¹ by multiplying by 60.\n- If only doubling time (td) is provided, calculate the growth rate (μ) using: μ = ln(2) / td (ensure td is in hours).\n- The final output must be a number in h⁻¹, rounded to 2 decimal places.\n- No units or extra text should be included in the output.\n\nSpecial cases:\n- If no growth rate information is found, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The specific optimal growth rate is 0.05 h⁻¹.",
+          "expected_answer": "<Answer>0.05</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The optimal growth rate is based on a doubling time of 20 hours.",
+          "expected_answer": "<Answer>0.0347</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The organism shows the highest growth rate of 0.02 h⁻¹ on glucose and 0.015 h⁻¹ on acetate.",
+          "expected_answer": "<Answer>0.02</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "Maximum specific growth rate observed was 0.1 h⁻¹ under aerobic conditions.",
+          "expected_answer": "<Answer>0.1</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "Best growth occurred at a rate of 0.08 h⁻¹ in nutrient-rich medium.",
+          "expected_answer": "<Answer>0.08</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.0198042051588556</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S066-08517",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.363899",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S066",
+        "image_index": [
+          "S066_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal doubling time for the strain RFM-1?",
+      "note": "This task extracts the best or optimal doubling time or calculates it from the growth rate.\n\nStep 1 – Identify the best doubling time:\n- Look for phrases like 'doubling time', 'generation time', or 'replication time'.\n- Only extract the *optimal* doubling time, not all values.\n- If multiple values are given, select the smallest (fastest) doubling time.\n- If no doubling time is found, but a growth rate is provided, calculate the optimal doubling time using the formula: \n  \\[ td = \\frac{\\ln(2)}{\\mu} \\]\n- If only one doubling time is provided, use it.\n\nStep 2 – Convert and format:\n- If the doubling time is reported in hours, use the value directly.\n- If the doubling time is in minutes, convert to hours by dividing by 60.\n- If the growth rate is provided, calculate the doubling time using the formula and ensure it is in hours.\n- Ensure the final output is in hours, rounded to the nearest decimal.\n- If no optimal doubling time information is found, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal doubling time?",
+          "text": "The shortest doubling time, observed under optimal conditions, was 12 hours.",
+          "expected_answer": "<Answer>12</Answer>"
+        },
+        {
+          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "text": "Only one doubling time of 22 hours was mentioned.",
+          "expected_answer": "<Answer>22</Answer>"
+        },
+        {
+          "question": "No information on doubling time or growth rate.",
+          "text": "Cells grew well on acetate and formate.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>35</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S066-08580",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.363996",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S066",
+        "image_index": [
+          "S066_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal growth rate of the microorganism for the strain RFM-2?",
+      "note": "This is a two-step task.\n\nStep 1 – Identify the best growth rate:\n- Look for terms like 'growth rate', 'specific growth rate', 'μ', or 'doubling time'.\n- Only extract the *optimal* growth rate, not all values.\n- If multiple growth rates are reported under different conditions, select the one under the optimal or highest performance condition.\n- If only one rate is given, use it.\n\nStep 2 – Convert and format:\n- If the growth rate is provided in h⁻¹, use the value directly.\n- If the rate is in min⁻¹, convert to h⁻¹ by multiplying by 60.\n- If only doubling time (td) is provided, calculate the growth rate (μ) using: μ = ln(2) / td (ensure td is in hours).\n- The final output must be a number in h⁻¹, rounded to 2 decimal places.\n- No units or extra text should be included in the output.\n\nSpecial cases:\n- If no growth rate information is found, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The specific optimal growth rate is 0.05 h⁻¹.",
+          "expected_answer": "<Answer>0.05</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The optimal growth rate is based on a doubling time of 20 hours.",
+          "expected_answer": "<Answer>0.0347</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "The organism shows the highest growth rate of 0.02 h⁻¹ on glucose and 0.015 h⁻¹ on acetate.",
+          "expected_answer": "<Answer>0.02</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "Maximum specific growth rate observed was 0.1 h⁻¹ under aerobic conditions.",
+          "expected_answer": "<Answer>0.1</Answer>"
+        },
+        {
+          "question": "What is the optimal growth rate of the microorganism?",
+          "text": "Best growth occurred at a rate of 0.08 h⁻¹ in nutrient-rich medium.",
+          "expected_answer": "<Answer>0.08</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>0.0173286795139986</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S066-08583",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.364018",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S066",
+        "image_index": [
+          "S066_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "What is the optimal doubling time for the strain RFM-2?",
+      "note": "This task extracts the best or optimal doubling time or calculates it from the growth rate.\n\nStep 1 – Identify the best doubling time:\n- Look for phrases like 'doubling time', 'generation time', or 'replication time'.\n- Only extract the *optimal* doubling time, not all values.\n- If multiple values are given, select the smallest (fastest) doubling time.\n- If no doubling time is found, but a growth rate is provided, calculate the optimal doubling time using the formula: \n  \\[ td = \\frac{\\ln(2)}{\\mu} \\]\n- If only one doubling time is provided, use it.\n\nStep 2 – Convert and format:\n- If the doubling time is reported in hours, use the value directly.\n- If the doubling time is in minutes, convert to hours by dividing by 60.\n- If the growth rate is provided, calculate the doubling time using the formula and ensure it is in hours.\n- Ensure the final output is in hours, rounded to the nearest decimal.\n- If no optimal doubling time information is found, return \"not provided\".\n",
+      "few_shot_examples": [
+        {
+          "question": "What is the optimal doubling time?",
+          "text": "The shortest doubling time, observed under optimal conditions, was 12 hours.",
+          "expected_answer": "<Answer>12</Answer>"
+        },
+        {
+          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "text": "Only one doubling time of 22 hours was mentioned.",
+          "expected_answer": "<Answer>22</Answer>"
+        },
+        {
+          "question": "No information on doubling time or growth rate.",
+          "text": "Cells grew well on acetate and formate.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "numeric",
+      "expected_answer": "<Answer>40</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S004-09007",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.364695",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S004",
+        "image_index": [
+          "S004_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is the strain anaerobic for the strain Blotevogel and Fischer 1988?",
+      "note": "Extraction Instructions:\n\nStep 1 – Identify oxygen-related growth characteristics:\n1. Look for statements such as:\n   - “strict anaerobe”, “obligate anaerobe”, “growth only under anaerobic conditions”, “O₂ inhibits growth”, etc.\n   - Lack of growth in aerobic conditions.\n\nStep 2 – Convert to boolean output:\n1. If strain is clearly described as anaerobic → return `true`\n2. If not anaerobic, facultative, or aerobic → return `false`\n3. If oxygen tolerance is not discussed → return `false`\n\nOutput Format:\n- Return either `true` or `false`\n",
+      "few_shot_examples": [
+        {
+          "question": "Is the strain anaerobic?",
+          "text": "This bacterium is a strict anaerobe and does not tolerate oxygen.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Growth conditions description",
+          "text": "It grows well under both aerobic and anaerobic conditions.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "No mention of oxygen sensitivity",
+          "text": "The strain was tested on glucose and acetate media, but no O₂ tolerance was discussed.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>true</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-09634",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365657",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 37 degrees Celsius the appropriate optimal growth temperature for the strain omeliansky?",
+      "note": "How to locate the information:\n1. Search for mentions of \"optimal growth temperature\", \"optimum temperature\", or similar phrases.\n2. If 37°C is explicitly mentioned as the optimal temperature, check if it's the best or standard condition for growth.\n3. Ensure that 37°C is described as optimal, not just as a suitable or general growth temperature.\n4. If 37°C is part of a range, determine if it is within that range or described as optimal.\n\nHow to determine the value:\n- If 37°C is described as the optimal temperature or part of an optimal range (e.g., \"optimal temperature of 37°C\" or \"optimal range 35–40°C\"), return \"<Answer>true</Answer>\".\n- If the text indicates that 37°C is not optimal or part of a general growth range without clear optimal suitability, return \"<Answer>false</Answer>\".\n- If no information is provided regarding optimal growth temperature, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The growth temperature for this organism is 30°C–40°C.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "This species thrives at temperatures between 25°C and 30°C, with no clear optimal temperature.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The organism grows best between 35°C and 40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "Optimal growth occurs at 37°C, with a preferred range of 30°C–40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S002-09640",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365665",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S002",
+        "image_index": [
+          "S002_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 37 degrees Celsius the appropriate optimal growth temperature for the strain kuznetsov?",
+      "note": "How to locate the information:\n1. Search for mentions of \"optimal growth temperature\", \"optimum temperature\", or similar phrases.\n2. If 37°C is explicitly mentioned as the optimal temperature, check if it's the best or standard condition for growth.\n3. Ensure that 37°C is described as optimal, not just as a suitable or general growth temperature.\n4. If 37°C is part of a range, determine if it is within that range or described as optimal.\n\nHow to determine the value:\n- If 37°C is described as the optimal temperature or part of an optimal range (e.g., \"optimal temperature of 37°C\" or \"optimal range 35–40°C\"), return \"<Answer>true</Answer>\".\n- If the text indicates that 37°C is not optimal or part of a general growth range without clear optimal suitability, return \"<Answer>false</Answer>\".\n- If no information is provided regarding optimal growth temperature, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The growth temperature for this organism is 30°C–40°C.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "This species thrives at temperatures between 25°C and 30°C, with no clear optimal temperature.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The organism grows best between 35°C and 40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "Optimal growth occurs at 37°C, with a preferred range of 30°C–40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S004-09655",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365687",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S004",
+        "image_index": [
+          "S004_I004"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 5% NaCl concentration suitable for growth for the strain Blotevogel and Fischer 1988?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for mentions of NaCl concentration ranges or specific concentrations related to growth.\n- Look for terms such as \"growth range\", \"can grow\", \"tolerates\", or \"NaCl tolerance\".\n- Ensure that the concentration is related to growth, not optimal growth.\n\nStep 2 - Determine the suitability of 5% NaCl:\n- If 5% NaCl is explicitly mentioned as a suitable concentration for growth, return \"<Answer>true</Answer>\".\n- If the concentration of 5% NaCl is outside the growth range or deemed unsuitable for growth, return \"<Answer>false</Answer>\".\n- If no clear information about the suitability of 5% NaCl is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "This organism can grow in NaCl concentrations between 3% and 6%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "Growth was observed only at NaCl concentrations of 0.5% to 2%.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The strain tolerates NaCl concentrations up to 8%, but optimal growth occurs at 1%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The organism grows well in NaCl concentrations between 1% and 4%.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-09771",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365884",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 37 degrees Celsius a suitable growth temperature for the strain RC/ER?",
+      "note": "How to locate the information:\n1. Look for any direct statements regarding the suitability of 37°C for growth.\n2. Phrases such as \"suitable growth temperature\", \"growth temperature\", or \"temperature range for growth\" should be considered.\n3. If the statement includes 37°C, ensure it is specifically referring to suitability and not a minimum or maximum value.\n4. If there is a temperature range, determine if 37°C falls within the range.\n\nHow to determine the value:\n- If 37°C is explicitly mentioned as suitable, return \"<Answer>true</Answer>\".\n- If 37°C is mentioned as unsuitable, return \"<Answer>false</Answer>\".\n- If no clear indication of suitability is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "The growth temperature for this organism is 37°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "Growth temperature occurs between 25°C and 30°C.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "This species grows at temperatures around 30°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-09775",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365893",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 5% NaCl concentration suitable for growth for the strain RC/ER?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for mentions of NaCl concentration ranges or specific concentrations related to growth.\n- Look for terms such as \"growth range\", \"can grow\", \"tolerates\", or \"NaCl tolerance\".\n- Ensure that the concentration is related to growth, not optimal growth.\n\nStep 2 - Determine the suitability of 5% NaCl:\n- If 5% NaCl is explicitly mentioned as a suitable concentration for growth, return \"<Answer>true</Answer>\".\n- If the concentration of 5% NaCl is outside the growth range or deemed unsuitable for growth, return \"<Answer>false</Answer>\".\n- If no clear information about the suitability of 5% NaCl is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "This organism can grow in NaCl concentrations between 3% and 6%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "Growth was observed only at NaCl concentrations of 0.5% to 2%.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The strain tolerates NaCl concentrations up to 8%, but optimal growth occurs at 1%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The organism grows well in NaCl concentrations between 1% and 4%.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-09777",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365896",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 37 degrees Celsius a suitable growth temperature for the strain Delta RC?",
+      "note": "How to locate the information:\n1. Look for any direct statements regarding the suitability of 37°C for growth.\n2. Phrases such as \"suitable growth temperature\", \"growth temperature\", or \"temperature range for growth\" should be considered.\n3. If the statement includes 37°C, ensure it is specifically referring to suitability and not a minimum or maximum value.\n4. If there is a temperature range, determine if 37°C falls within the range.\n\nHow to determine the value:\n- If 37°C is explicitly mentioned as suitable, return \"<Answer>true</Answer>\".\n- If 37°C is mentioned as unsuitable, return \"<Answer>false</Answer>\".\n- If no clear indication of suitability is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "The growth temperature for this organism is 37°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "Growth temperature occurs between 25°C and 30°C.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius a suitable growth temperature?",
+          "text": "This species grows at temperatures around 30°C.",
+          "expected_answer": "<Answer>not provided</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S020-09781",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365902",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S020",
+        "image_index": [
+          "S020_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 5% NaCl concentration suitable for growth for the strain Delta RC?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for mentions of NaCl concentration ranges or specific concentrations related to growth.\n- Look for terms such as \"growth range\", \"can grow\", \"tolerates\", or \"NaCl tolerance\".\n- Ensure that the concentration is related to growth, not optimal growth.\n\nStep 2 - Determine the suitability of 5% NaCl:\n- If 5% NaCl is explicitly mentioned as a suitable concentration for growth, return \"<Answer>true</Answer>\".\n- If the concentration of 5% NaCl is outside the growth range or deemed unsuitable for growth, return \"<Answer>false</Answer>\".\n- If no clear information about the suitability of 5% NaCl is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "This organism can grow in NaCl concentrations between 3% and 6%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "Growth was observed only at NaCl concentrations of 0.5% to 2%.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The strain tolerates NaCl concentrations up to 8%, but optimal growth occurs at 1%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The organism grows well in NaCl concentrations between 1% and 4%.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S025-09809",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.365944",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S025",
+        "image_index": [
+          "S025_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is a pH value of 9.2 suitable for growth for the strain C2J?",
+      "note": "Step 1 - Identify the growth pH range:\n1. Look for explicit mentions of pH values suitable for growth, such as \"grows at pH\", \"optimal pH range\", or \"suitable pH\".\n2. Check for phrases like \"suitable pH\", \"growth occurs at pH\", or \"preferred pH\".\n3. Ensure the reference is to growth, not just optimal conditions.\n4. If a pH range is provided, ensure that 9.2 falls within it.\n\nStep 2 - Determine the suitability of 9.2:\n- If the pH range is given and 9.2 is within the range (or specifically mentioned as suitable), return \"<Answer>true</Answer>\".\n- If the pH value of 9.2 is explicitly mentioned as unsuitable or outside the growth range, return \"<Answer>false</Answer>\".\n- If there is no clear indication about the suitability of pH 9.2, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "This organism grows well at pH values between 6.0 and 9.0.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "The strain can grow within a pH range of 5.5–9.5.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "The ideal pH for growth is 7.0, but it can tolerate values between 6.0 and 8.5.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "Growth is observed at pH levels as high as 9.0.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-09898",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.366075",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 37 degrees Celsius the appropriate optimal growth temperature for the strain M7?",
+      "note": "How to locate the information:\n1. Search for mentions of \"optimal growth temperature\", \"optimum temperature\", or similar phrases.\n2. If 37°C is explicitly mentioned as the optimal temperature, check if it's the best or standard condition for growth.\n3. Ensure that 37°C is described as optimal, not just as a suitable or general growth temperature.\n4. If 37°C is part of a range, determine if it is within that range or described as optimal.\n\nHow to determine the value:\n- If 37°C is described as the optimal temperature or part of an optimal range (e.g., \"optimal temperature of 37°C\" or \"optimal range 35–40°C\"), return \"<Answer>true</Answer>\".\n- If the text indicates that 37°C is not optimal or part of a general growth range without clear optimal suitability, return \"<Answer>false</Answer>\".\n- If no information is provided regarding optimal growth temperature, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The growth temperature for this organism is 30°C–40°C.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "This species thrives at temperatures between 25°C and 30°C, with no clear optimal temperature.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "The organism grows best between 35°C and 40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 37 degrees Celsius the appropriate optimal growth temperature?",
+          "text": "Optimal growth occurs at 37°C, with a preferred range of 30°C–40°C.",
+          "expected_answer": "<Answer>true</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S040-09902",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.366080",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S040",
+        "image_index": [
+          "S040_I005"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 3% NaCl concentration the optimal growth concentration for the strain M7?",
+      "note": "First, identify optimal NaCl concentration information:\n- Search for phrases like: \"optimal NaCl concentration\", \"optimum concentration\", \"grows best at\", \"maximum growth at\", \"preferred NaCl concentration\", etc.\n- Ensure it refers to the optimal concentration, not just the general growth range or tolerance.\n\nThen, determine the suitability of 3% NaCl:\n- If 3% NaCl is explicitly mentioned as the optimal concentration or within an optimal concentration range, return \"<Answer>true</Answer>\".\n- If 3% NaCl is outside the optimal range or not described as optimal, return \"<Answer>false</Answer>\".\n- If no clear information about the optimal concentration is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 3% NaCl concentration the optimal growth concentration?",
+          "text": "The organism grows best at 2–3% NaCl.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 3% NaCl concentration the optimal growth concentration?",
+          "text": "Optimal growth is observed at 1% NaCl.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 3% NaCl concentration the optimal growth concentration?",
+          "text": "The bacterium shows maximum growth at 2.5% NaCl.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 3% NaCl concentration the optimal growth concentration?",
+          "text": "Optimal growth occurred at 3% NaCl.",
+          "expected_answer": "<Answer>true</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S046-09967",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.366187",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S046",
+        "image_index": [
+          "S046_I001"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 5% NaCl concentration suitable for growth for the strain PL-12/M?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for mentions of NaCl concentration ranges or specific concentrations related to growth.\n- Look for terms such as \"growth range\", \"can grow\", \"tolerates\", or \"NaCl tolerance\".\n- Ensure that the concentration is related to growth, not optimal growth.\n\nStep 2 - Determine the suitability of 5% NaCl:\n- If 5% NaCl is explicitly mentioned as a suitable concentration for growth, return \"<Answer>true</Answer>\".\n- If the concentration of 5% NaCl is outside the growth range or deemed unsuitable for growth, return \"<Answer>false</Answer>\".\n- If no clear information about the suitability of 5% NaCl is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "This organism can grow in NaCl concentrations between 3% and 6%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "Growth was observed only at NaCl concentrations of 0.5% to 2%.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The strain tolerates NaCl concentrations up to 8%, but optimal growth occurs at 1%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The organism grows well in NaCl concentrations between 1% and 4%.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S047-09971",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.366193",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S047",
+        "image_index": [
+          "S047_I002"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is a pH value of 9.2 suitable for growth for the strain B-1?",
+      "note": "Step 1 - Identify the growth pH range:\n1. Look for explicit mentions of pH values suitable for growth, such as \"grows at pH\", \"optimal pH range\", or \"suitable pH\".\n2. Check for phrases like \"suitable pH\", \"growth occurs at pH\", or \"preferred pH\".\n3. Ensure the reference is to growth, not just optimal conditions.\n4. If a pH range is provided, ensure that 9.2 falls within it.\n\nStep 2 - Determine the suitability of 9.2:\n- If the pH range is given and 9.2 is within the range (or specifically mentioned as suitable), return \"<Answer>true</Answer>\".\n- If the pH value of 9.2 is explicitly mentioned as unsuitable or outside the growth range, return \"<Answer>false</Answer>\".\n- If there is no clear indication about the suitability of pH 9.2, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "This organism grows well at pH values between 6.0 and 9.0.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "The strain can grow within a pH range of 5.5–9.5.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "The ideal pH for growth is 7.0, but it can tolerate values between 6.0 and 8.5.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is a pH value of 9.2 suitable for growth?",
+          "text": "Growth is observed at pH levels as high as 9.0.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>not provided</Answer>"
+    }
+  },
+  {
+    "case_id": "MB-S047-09973",
+    "version": "1.0",
+    "timestamp": "2025-05-11T18:10:04.366196",
+    "difficulty": "Hard",
+    "task_category": "Multimodal Understanding",
+    "task_subcategory": "Figure-based Strain Attribute Extraction",
+    "test_case": {
+      "input": {
+        "pdf_index": "S047",
+        "image_index": [
+          "S047_I003"
+        ],
+        "is_full_pdf": false
+      },
+      "question": "Is 5% NaCl concentration suitable for growth for the strain B-1?",
+      "note": "This is a two-step task:\n\nStep 1 - Identify the growth NaCl concentration range:\n- Search for mentions of NaCl concentration ranges or specific concentrations related to growth.\n- Look for terms such as \"growth range\", \"can grow\", \"tolerates\", or \"NaCl tolerance\".\n- Ensure that the concentration is related to growth, not optimal growth.\n\nStep 2 - Determine the suitability of 5% NaCl:\n- If 5% NaCl is explicitly mentioned as a suitable concentration for growth, return \"<Answer>true</Answer>\".\n- If the concentration of 5% NaCl is outside the growth range or deemed unsuitable for growth, return \"<Answer>false</Answer>\".\n- If no clear information about the suitability of 5% NaCl is provided, answer \"<Answer>not provided</Answer>\".\n",
+      "few_shot_examples": [
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "This organism can grow in NaCl concentrations between 3% and 6%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "Growth was observed only at NaCl concentrations of 0.5% to 2%.",
+          "expected_answer": "<Answer>false</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The strain tolerates NaCl concentrations up to 8%, but optimal growth occurs at 1%.",
+          "expected_answer": "<Answer>true</Answer>"
+        },
+        {
+          "question": "Is 5% NaCl concentration suitable for growth?",
+          "text": "The organism grows well in NaCl concentrations between 1% and 4%.",
+          "expected_answer": "<Answer>false</Answer>"
+        }
+      ],
+      "expected_answer_type": "boolean",
+      "expected_answer": "<Answer>True</Answer>"
+    }
+  }
+]
