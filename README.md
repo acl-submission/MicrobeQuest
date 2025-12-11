@@ -6,7 +6,7 @@
 **MicrobeQuest** is the **first comprehensive multimodal benchmark** tailored for microbiology-focused information retrieval and scientific document understanding.
 It addresses a critical challenge in the domain: microbiological knowledge is scattered across **text, tables, figures, and complex document layouts**.
 
-We curated **20,176 expert-annotated multimodal query–response pairs** from real academic literature and public microbiology databases. MicrobeQuest systematically evaluates model performance across **18 real-world tasks**, covering structured extraction, multimodal reasoning, and layout-aware understanding.
+We curated **11, 877 expert-annotated multimodal query–response pairs** from real academic literature and public microbiology databases. MicrobeQuest systematically evaluates model performance across **18 real-world tasks**, covering structured extraction, multimodal reasoning, and layout-aware understanding.
 
 ---
 
@@ -84,7 +84,7 @@ Key findings:
 
 ---
 
-## 📉 Updated Mini-Leaderboard
+## 📉 Mini-Leaderboard
 
 
 
@@ -116,7 +116,6 @@ Key findings:
 
 ## 📈 Performance Chart
 
-*(Images preserved as in your original README)*
 
 <p align="center">
   <img src="resources/Structured_Information_Extraction.png" width="45%"/>
@@ -168,13 +167,13 @@ python run_benchmark.py
 
 ## 📨 Contact
 
-(You can fill in your contact email or group page here.)
+
 
 ---
 
 ## 📚 Citation
 
-(The citation information will be added upon preprint release.)
+
 
 ---
 
