@@ -13,8 +13,7 @@ We curated **11, 877 expert-annotated multimodal query–response pairs** from r
 ## 🔄 Updates
 
 * **May 2025** — Initial release of MicrobeQuest with **10,176** annotated multimodal query–response pairs
-* **Dec 2025** — Expanded strain coverage and rebuilt benchmark to **11,877** test cases
-* **Upcoming** — Online leaderboard, full paper, and ablation study on prompting strategies
+* **Dec 2025** — Expanded strain coverage and rebuilt benchmark to **11,877** annotated multimodal query–response pairs
 
 ---
 
