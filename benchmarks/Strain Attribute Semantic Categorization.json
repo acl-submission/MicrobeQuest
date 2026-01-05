@@ -36,16 +36,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -89,16 +79,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -142,16 +122,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -196,16 +166,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -249,16 +209,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -303,16 +253,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -356,16 +296,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -409,16 +339,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -463,16 +383,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -516,16 +426,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -569,16 +469,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -622,16 +512,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -675,16 +555,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -728,16 +598,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -781,16 +641,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -835,16 +685,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -889,16 +729,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -943,16 +773,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -997,16 +817,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1051,16 +861,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1105,16 +905,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1158,16 +948,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1212,16 +992,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1265,16 +1035,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1318,16 +1078,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1371,16 +1121,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1424,16 +1164,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1477,16 +1207,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1530,16 +1250,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1584,16 +1294,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1637,16 +1337,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1690,16 +1380,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1744,16 +1424,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1797,16 +1467,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1850,16 +1510,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1903,16 +1553,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -1957,16 +1597,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2010,16 +1640,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2064,16 +1684,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2119,16 +1729,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2172,16 +1772,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2226,16 +1816,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2279,16 +1859,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2333,16 +1903,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2386,16 +1946,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2440,16 +1990,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2493,16 +2033,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2546,16 +2076,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2599,16 +2119,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2652,16 +2162,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2707,16 +2207,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2761,16 +2251,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2814,16 +2294,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2867,16 +2337,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2920,16 +2380,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -2973,16 +2423,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3027,16 +2467,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3081,16 +2511,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3134,16 +2554,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3187,16 +2597,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3240,16 +2640,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3293,16 +2683,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3347,16 +2727,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3400,16 +2770,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3454,16 +2814,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3508,16 +2858,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3561,16 +2901,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3614,16 +2944,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3668,16 +2988,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3721,16 +3031,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3774,16 +3074,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3827,16 +3117,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3880,16 +3160,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3933,16 +3203,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -3986,16 +3246,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4039,16 +3289,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4093,16 +3333,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4146,16 +3376,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4199,16 +3419,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4252,16 +3462,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4306,16 +3506,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4359,16 +3549,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4412,16 +3592,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4467,16 +3637,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4520,16 +3680,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4573,16 +3723,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4627,16 +3767,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4680,16 +3810,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4734,16 +3854,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4787,16 +3897,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4840,16 +3940,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4894,16 +3984,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -4947,16 +4027,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5000,16 +4070,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5053,16 +4113,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5107,16 +4157,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5160,16 +4200,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5214,16 +4244,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5267,16 +4287,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5320,16 +4330,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5373,16 +4373,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5426,16 +4416,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5481,16 +4461,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5534,16 +4504,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5588,16 +4548,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5641,16 +4591,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5694,16 +4634,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5748,16 +4678,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5802,16 +4722,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5855,16 +4765,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5909,16 +4809,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -5962,16 +4852,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6015,16 +4895,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6068,16 +4938,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6122,16 +4982,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6176,16 +5026,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6230,16 +5070,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6283,16 +5113,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6336,16 +5156,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6390,16 +5200,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6444,16 +5244,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6497,16 +5287,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6550,16 +5330,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6603,16 +5373,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6658,16 +5418,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6711,16 +5461,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6764,16 +5504,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6817,16 +5547,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6871,16 +5591,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6925,16 +5635,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -6979,16 +5679,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -7032,16 +5722,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",
@@ -7085,16 +5765,6 @@
           "question": "In what specific habitat or environment does this organism typically grow?",
           "text": "The bacterium colonizes the root nodules of leguminous plants, indicating a symbiotic interaction.",
           "expected_answer": "<Answer>Symbiosis with host</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The strain thrives in deep subsurface shale formations where it contributes to biogeochemical cycles.",
-          "expected_answer": "<Answer>Subsurface</Answer>"
-        },
-        {
-          "question": "In what specific habitat or environment does this organism typically grow?",
-          "text": "The bacterium was isolated from an unknown environment, and no growth conditions were specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "category",

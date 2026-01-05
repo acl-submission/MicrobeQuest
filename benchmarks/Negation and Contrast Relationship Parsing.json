@@ -23,12 +23,12 @@
           "expected_answer": "<Answer>Archaea</Answer>"
         },
         {
-          "question": "Specify the domain of Escherichia coli.",
+          "question": "What is the domain of the microorganism?",
           "text": "Escherichia coli is a model organism in the domain Bacteria.",
           "expected_answer": "<Answer>Bacteria</Answer>"
         },
         {
-          "question": "To which domain does Saccharomyces cerevisiae belong?",
+          "question": "What is the domain of the microorganism?",
           "text": "Saccharomyces cerevisiae, a species of yeast, is part of the domain Eukarya.",
           "expected_answer": "<Answer>Eukarya</Answer>"
         },
@@ -36,16 +36,6 @@
           "question": "What is the domain of this strain?",
           "text": "This novel strain was isolated from soil, with taxonomic analysis placing it in the phylum Firmicutes.",
           "expected_answer": "<Answer>Bacteria</Answer>"
-        },
-        {
-          "question": "Can you identify the domain?",
-          "text": "The microorganism belongs to the genus Halococcus, known for its archaeal characteristics.",
-          "expected_answer": "<Answer>Archaea</Answer>"
-        },
-        {
-          "question": "Determine the domain.",
-          "text": "No domain-level classification was provided for this organism.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "entity",
@@ -300,22 +290,22 @@
         "is_full_pdf": false
       },
       "question": "What factors inhibit the organism's growth for the strain 1-6 ? ",
-      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (1) (10%)\", \"nitrate (1) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (1)` if inhibitory without dose.\n   - Use `name (1) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> factors inhibit the organism's growth </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (+) (10%)\", \"nitrate (+) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (+)` if inhibitory without dose.\n   - Use `name (+) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> factors inhibit the organism's growth </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "The bacterium's growth is inhibited by high concentrations of NaCl and low pH.",
-          "expected_answer": "<Answer>['NaCl (1) (10%)']</Answer>"
+          "expected_answer": "<Answer>['NaCl (+) (10%)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Growth is suppressed by the presence of high concentrations of nitrate.",
-          "expected_answer": "<Answer>['nitrate (1) (10 mM)']</Answer>"
+          "expected_answer": "<Answer>['nitrate (+) (10 mM)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Oxygen inhibits the growth of this anaerobic bacterium.",
-          "expected_answer": "<Answer>['O₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['O₂ (+)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -403,19 +393,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -906,19 +891,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -1004,19 +984,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -1604,19 +1579,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -2428,19 +2398,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -2772,19 +2737,14 @@
           "expected_answer": "<Answer>63.4</Answer>"
         },
         {
-          "question": "G+C content ranged from 60–62% across isolates.",
+          "question": "What is the G+C content (mol%)?",
           "text": "G+C content ranged from 60–62%.",
           "expected_answer": "<Answer>62.0</Answer>"
         },
         {
-          "question": "Measured value: 65.1 ± 0.2 mol%",
+          "question": "What is the G+C content (mol%)?",
           "text": "Measured value: 65.1 ± 0.2 mol%",
           "expected_answer": "<Answer>65.1</Answer>"
-        },
-        {
-          "question": "No G+C percentage was given.",
-          "text": "Genome analysis was conducted but G+C content was not specified.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -3138,19 +3098,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -3186,12 +3141,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -3230,19 +3185,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -3446,12 +3396,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain CA043D ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -3461,7 +3411,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -4177,19 +4127,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -4231,12 +4176,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -4375,19 +4320,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -4734,12 +4674,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -5055,12 +4995,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain PB108 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -5070,7 +5010,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -5107,12 +5047,12 @@
           "expected_answer": "<Answer>8.5×10⁷ (cells ml⁻¹) under late exponential phase</Answer>"
         },
         {
-          "question": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
           "expected_answer": "<Answer>1.2×10⁸ (cells ml⁻¹) under methanol-fed cultures</Answer>"
         },
         {
-          "question": "Several densities were measured: 5×10⁷ and 9×10⁷ cells/ml.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "Cell densities included 5×10⁷ and 9×10⁷ cells/ml.",
           "expected_answer": "<Answer>9×10⁷ (cells ml⁻¹)</Answer>"
         }
@@ -5145,12 +5085,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain FYK2301M01 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -5160,7 +5100,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -5475,19 +5415,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -5795,12 +5730,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain 17J68-15 ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -5810,7 +5745,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -5848,19 +5783,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -5898,12 +5828,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -6755,19 +6685,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -6852,19 +6777,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -6961,19 +6881,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -7331,19 +7246,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -7738,19 +7648,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -7789,12 +7694,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -7881,12 +7786,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain ACht1 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -7896,7 +7801,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -7934,19 +7839,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -7984,12 +7884,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -8029,12 +7929,12 @@
           "expected_answer": "<Answer>8.5×10⁷ (cells ml⁻¹) under late exponential phase</Answer>"
         },
         {
-          "question": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
           "expected_answer": "<Answer>1.2×10⁸ (cells ml⁻¹) under methanol-fed cultures</Answer>"
         },
         {
-          "question": "Several densities were measured: 5×10⁷ and 9×10⁷ cells/ml.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "Cell densities included 5×10⁷ and 9×10⁷ cells/ml.",
           "expected_answer": "<Answer>9×10⁷ (cells ml⁻¹)</Answer>"
         }
@@ -8758,19 +8658,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -9019,12 +8914,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain AM23 ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -9034,7 +8929,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -9063,12 +8958,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain AM23 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -9078,7 +8973,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -9165,19 +9060,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -9214,7 +9104,12 @@
           "expected_answer": "<Answer>0.8 (g/L) lactate</Answer>"
         },
         {
-          "question": "Only CFU and OD values were reported.",
+          "question": "What is the maximum cell yield in terms of dry weight?",
+          "text": "Dry weight yield was 0.8 g L⁻¹ using lactate as substrate.",
+          "expected_answer": "<Answer>0.8 (g/L) lactate</Answer>"
+        },
+        {
+          "question": "What is the maximum cell yield in terms of dry weight?",
           "text": "Final cell count was 10⁹ CFU/ml with OD600 of 1.2.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -9333,12 +9228,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain SWU8 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -9348,7 +9243,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -9699,12 +9594,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain CA054A ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -9714,7 +9609,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -10181,19 +10076,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -10557,19 +10447,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -11239,18 +11124,8 @@
           "expected_answer": "<Answer>Halobacteria</Answer>"
         },
         {
-          "question": "Can the class be determined?",
+          "question": "To which class is this strain assigned?",
           "text": "The strain falls under the phylum Proteobacteria, specifically in the order Rhizobiales.",
-          "expected_answer": "<Answer>not provided</Answer>"
-        },
-        {
-          "question": "State the class of Mycobacterium tuberculosis.",
-          "text": "Mycobacterium tuberculosis is placed in the class Actinomycetia, a group of high G+C Gram-positive bacteria.",
-          "expected_answer": "<Answer>Actinomycetia</Answer>"
-        },
-        {
-          "question": "Can the class be determined?",
-          "text": "While the phylum and genus were identified, the class was not mentioned.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
@@ -12014,22 +11889,22 @@
         "is_full_pdf": false
       },
       "question": "Which agents inhibit or reduce the growth rate of the organism for the strain F1 ? ",
-      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (1) (10%)\", \"nitrate (1) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (1)` if inhibitory without dose.\n   - Use `name (1) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> agents inhibit or reduce the growth rate of the organism </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (+) (10%)\", \"nitrate (+) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (+)` if inhibitory without dose.\n   - Use `name (+) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> factors inhibit the organism's growth </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "The bacterium's growth is inhibited by high concentrations of NaCl and low pH.",
-          "expected_answer": "<Answer>['NaCl (1) (10%)']</Answer>"
+          "expected_answer": "<Answer>['NaCl (+) (10%)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Growth is suppressed by the presence of high concentrations of nitrate.",
-          "expected_answer": "<Answer>['nitrate (1) (10 mM)']</Answer>"
+          "expected_answer": "<Answer>['nitrate (+) (10 mM)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Oxygen inhibits the growth of this anaerobic bacterium.",
-          "expected_answer": "<Answer>['O₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['O₂ (+)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -12052,22 +11927,22 @@
         "is_full_pdf": false
       },
       "question": "What factors inhibit the organism's growth for the strain W-12 ? ",
-      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (1) (10%)\", \"nitrate (1) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (1)` if inhibitory without dose.\n   - Use `name (1) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> factors inhibit the organism's growth </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify compounds or elements explicitly stated to **inhibit growth**.\n   - Phrases: \"inhibits growth\", \"toxic to\", \"suppresses growth\", etc.\n2. Include **O₂ (oxygen)** as an inhibitor **if the organism is described as anaerobic** (e.g., \"strict anaerobe\").\n3. Only extract inhibitors with specified dosage (concentration or amount), unless the O₂ rule applies.\n   - Examples: \"NaCl (+) (10%)\", \"nitrate (+) (1 μg/mL)\"\n4. Exclude:\n   - Non-supporting substrates not explicitly inhibitory.\n   - Lysis agents or nonspecific stressors.\n5. Output Format:\n   - Use `name (+)` if inhibitory without dose.\n   - Use `name (+) (concentration)` if dose is provided.\n   - Comma-separated list.\n6. If no inhibitors are mentioned → `\"not provided\"`\n7. Return the result in the format: '<Answer> factors inhibit the organism's growth </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "The bacterium's growth is inhibited by high concentrations of NaCl and low pH.",
-          "expected_answer": "<Answer>['NaCl (1) (10%)']</Answer>"
+          "expected_answer": "<Answer>['NaCl (+) (10%)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Growth is suppressed by the presence of high concentrations of nitrate.",
-          "expected_answer": "<Answer>['nitrate (1) (10 mM)']</Answer>"
+          "expected_answer": "<Answer>['nitrate (+) (10 mM)']</Answer>"
         },
         {
           "question": "What factors inhibit the organism's growth?",
           "text": "Oxygen inhibits the growth of this anaerobic bacterium.",
-          "expected_answer": "<Answer>['O₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['O₂ (+)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -13375,19 +13250,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -14420,12 +14290,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain AHT16 ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -14435,7 +14305,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -14466,19 +14336,14 @@
           "expected_answer": "<Answer>1.2</Answer>"
         },
         {
-          "question": "What is the maximum length of Cell morphology?",
+          "question": "What is the minimum length of Cell morphology?",
           "text": "Length varied from 6.0–7.2 µm depending on conditions.",
           "expected_answer": "<Answer>6.0</Answer>"
         },
         {
-          "question": "Cells are approximately 3 µm long in average.",
+          "question": "What is the minimum length of Cell morphology?",
           "text": "Cells are approximately 3 µm long in average.",
           "expected_answer": "<Answer>3.0</Answer>"
-        },
-        {
-          "question": "No cell length information is reported.",
-          "text": "Rod-shaped cells with flagella; dimensions not discussed.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -15874,12 +15739,12 @@
         "is_full_pdf": true
       },
       "question": "What is the sulfur source for the strain UC17 ? ",
-      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (1), and rejected/non-utilized ones as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (1) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (1), cysteine (-1) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify sulfur sources such as sulfate, hydrogen sulfide, cysteine, elemental sulfur, etc.\n2. Mark required sources as (+), and rejected/non-utilized ones as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"sulfate (+) (2 mM)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"sulfate (+), cysteine (-) (5 mg/L)\"\n5. If no valid sulfur sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> sulfur source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the sulfur source?",
           "text": "The organism utilizes sulfate and cysteine.",
-          "expected_answer": "<Answer>['sulfate (1)', 'cysteine (1)']</Answer>"
+          "expected_answer": "<Answer>['sulfate (+)', 'cysteine (+)']</Answer>"
         },
         {
           "question": "What is the sulfur source?",
@@ -15889,7 +15754,7 @@
         {
           "question": "What is the sulfur source?",
           "text": "The sulfur source is elemental sulfur (0.5%). Sulfate was tested but not used.",
-          "expected_answer": "<Answer>['elemental sulfur (1) (0.5%)', 'sulfate (-1)']</Answer>"
+          "expected_answer": "<Answer>['elemental sulfur (+) (0.5%)', 'sulfate (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -16210,17 +16075,17 @@
           "expected_answer": "<Answer>2.565</Answer>"
         },
         {
-          "question": "The growth range is 0.5–5.0% NaCl.",
+          "question": "What is the maximum NaCl concentration for growth?",
           "text": "The growth range is 0.5–5.0% NaCl.",
           "expected_answer": "<Answer>0.855</Answer>"
         },
         {
-          "question": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
+          "question": "What is the maximum NaCl concentration for growth?",
           "text": "Cells were able to grow in NaCl concentrations up to 100 g/L.",
           "expected_answer": "<Answer>1.711</Answer>"
         },
         {
-          "question": "The optimum concentration is 2% NaCl.",
+          "question": "What is the maximum NaCl concentration for growth?",
           "text": "The optimum concentration is 2% NaCl.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -16451,12 +16316,12 @@
           "expected_answer": "<Answer>8.5×10⁷ (cells ml⁻¹) under late exponential phase</Answer>"
         },
         {
-          "question": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
           "expected_answer": "<Answer>1.2×10⁸ (cells ml⁻¹) under methanol-fed cultures</Answer>"
         },
         {
-          "question": "Several densities were measured: 5×10⁷ and 9×10⁷ cells/ml.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "Cell densities included 5×10⁷ and 9×10⁷ cells/ml.",
           "expected_answer": "<Answer>9×10⁷ (cells ml⁻¹)</Answer>"
         }
@@ -16496,7 +16361,12 @@
           "expected_answer": "<Answer>0.8 (g/L) lactate</Answer>"
         },
         {
-          "question": "Only CFU and OD values were reported.",
+          "question": "What is the maximum cell yield in terms of dry weight?",
+          "text": "Dry weight yield was 0.8 g L⁻¹ using lactate as substrate.",
+          "expected_answer": "<Answer>0.8 (g/L) lactate</Answer>"
+        },
+        {
+          "question": "What is the maximum cell yield in terms of dry weight?",
           "text": "Final cell count was 10⁹ CFU/ml with OD600 of 1.2.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -17695,19 +17565,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -17747,12 +17612,12 @@
           "expected_answer": "<Answer>12</Answer>"
         },
         {
-          "question": "Only one doubling time of 22 hours was mentioned in the study.",
+          "question": "What is the optimal doubling time?",
           "text": "Only one doubling time of 22 hours was mentioned.",
           "expected_answer": "<Answer>22</Answer>"
         },
         {
-          "question": "No information on doubling time or growth rate.",
+          "question": "What is the optimal doubling time?",
           "text": "Cells grew well on acetate and formate.",
           "expected_answer": "<Answer>not provided</Answer>"
         }
@@ -18298,19 +18163,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -18391,12 +18251,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain E18 ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -18406,7 +18266,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -18665,12 +18525,12 @@
           "expected_answer": "<Answer>8.5×10⁷ (cells ml⁻¹) under late exponential phase</Answer>"
         },
         {
-          "question": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "The maximum cell concentration was 1.2×10⁸ cells ml⁻¹ in methanol-fed cultures.",
           "expected_answer": "<Answer>1.2×10⁸ (cells ml⁻¹) under methanol-fed cultures</Answer>"
         },
         {
-          "question": "Several densities were measured: 5×10⁷ and 9×10⁷ cells/ml.",
+          "question": "What is the maximum cell yield per ml?",
           "text": "Cell densities included 5×10⁷ and 9×10⁷ cells/ml.",
           "expected_answer": "<Answer>9×10⁷ (cells ml⁻¹)</Answer>"
         }
@@ -19106,12 +18966,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain Gsoil 3017 ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -19121,7 +18981,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
@@ -19160,19 +19020,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -19476,19 +19331,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -20327,19 +20177,14 @@
           "expected_answer": "<Answer>16 hours (H₂/CO₂)</Answer>"
         },
         {
-          "question": "Doubling time was 90 minutes when grown on glucose.",
+          "question": "What is the doubling time?",
           "text": "Doubling time was 90 minutes when grown on glucose.",
           "expected_answer": "<Answer>1.5 hours (glucose)</Answer>"
         },
         {
-          "question": "No doubling time was directly reported, but the growth rate was 0.03 h⁻¹.",
+          "question": "What is the doubling time?",
           "text": "The specific growth rate was determined to be 0.03 h⁻¹.",
           "expected_answer": "<Answer>23.1 hours</Answer>"
-        },
-        {
-          "question": "No doubling time or growth rate is mentioned.",
-          "text": "The strain was cultured under standard conditions.",
-          "expected_answer": "<Answer>not provided</Answer>"
         }
       ],
       "expected_answer_type": "numeric",
@@ -20835,12 +20680,12 @@
         "is_full_pdf": true
       },
       "question": "What is the nitrogen source for the strain MH₂ ? ",
-      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (1)\n   - Not utilized/rejected sources → mark as (-1)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (1) (5 mM)\", \"NO₃⁻ (-1) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (1), NO₃⁻ (-1) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
+      "note": "Extraction Instructions:\n1. Identify nitrogen sources such as NH₄⁺, NO₃⁻, N₂, urea, amino acids, etc.\n2. Extract both types:\n   - Required nitrogen sources → mark as (+)\n   - Not utilized/rejected sources → mark as (-)\n3. If concentration or dosage is mentioned, append it in parentheses:\n   - Example: \"NH₄⁺ (+) (5 mM)\", \"NO₃⁻ (-) (10 mg/L)\"\n4. Output Format: Return a comma-separated list.\n   - Example: \"NH₄⁺ (+), NO₃⁻ (-) (10 mg/L)\"\n5. If no valid nitrogen sources are found → `\"not provided\"`\n6. Return the result in the format: '<Answer> nitrogen source </Answer>'. Do not provide explanations.\n",
       "few_shot_examples": [
         {
           "question": "What is the nitrogen source?",
           "text": "The strain utilizes ammonium and can fix atmospheric nitrogen.",
-          "expected_answer": "<Answer>['ammonium (1)', 'N₂ (1)']</Answer>"
+          "expected_answer": "<Answer>['ammonium (+)', 'N₂ (+)']</Answer>"
         },
         {
           "question": "What is the nitrogen source?",
@@ -20850,7 +20695,7 @@
         {
           "question": "What is the nitrogen source?",
           "text": "It uses nitrate (10 mM) and amino acids for growth. Urea had no effect.",
-          "expected_answer": "<Answer>['NO₃⁻ (1) (10 mM)', 'amino acids (1)', 'urea (-1)']</Answer>"
+          "expected_answer": "<Answer>['NO₃⁻ (+) (10 mM)', 'amino acids (+)', 'urea (-)']</Answer>"
         }
       ],
       "expected_answer_type": "entity list",
