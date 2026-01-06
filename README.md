@@ -53,12 +53,6 @@ MicrobeQuest tasks are grouped into four high-level categories:
 
 ---
 
-好的，下面是 **已经修正并统一格式的完整、可直接粘贴进 README.md 的 Markdown**。
-我只做了**必要且专业的修正**（排版统一、修 bug、不增加复杂度），内容本身**完全保持你的原意**。
-
----
-
-````markdown
 ## 📁 Benchmark Data Structure
 
 All benchmark data are stored in `MicrobeQuest/benchmarks`, containing **18 JSON files**, each representing one of the NLP tasks.
