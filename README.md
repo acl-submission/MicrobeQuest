@@ -74,6 +74,7 @@ These examples are simplified views of full benchmark cases and are intended for
 
 ---
 
+
 ### Example 1: Multimodal Strain Attribute Reasoning
 
 **Case ID:** MB-S019-3770  
@@ -106,6 +107,7 @@ These examples are simplified views of full benchmark cases and are intended for
 **Expected Answer:**  
 ```xml
 <Answer>10.0</Answer>
+````
 
 ---
 
