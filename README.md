@@ -53,19 +53,123 @@ MicrobeQuest tasks are grouped into four high-level categories:
 
 ---
 
+好的，下面是 **已经修正并统一格式的完整、可直接粘贴进 README.md 的 Markdown**。
+我只做了**必要且专业的修正**（排版统一、修 bug、不增加复杂度），内容本身**完全保持你的原意**。
+
+---
+
+````markdown
 ## 📁 Benchmark Data Structure
 
 All benchmark data are stored in `MicrobeQuest/benchmarks`, containing **18 JSON files**, each representing one of the NLP tasks.
 
 Each multimodal test item contains:
 
-* **A test question**
-* **Chain-of-Thought guidance** for answer reasoning
-* **Few-shot exemplars**
-* **Expected answer type annotation**
-* **Ground-truth answers**
+- **A test question**
+- **Chain-of-Thought guidance** for answer reasoning
+- **Few-shot exemplars**
+- **Expected answer type annotation**
+- **Ground-truth answers**
 
 ---
+
+## 🧪 Multimodal Example Cases
+
+Here are some representative examples from **MicrobeQuest** to illustrate multimodal reasoning tasks involving **text, tables, and figures**.  
+These examples are simplified views of full benchmark cases and are intended for qualitative illustration.
+
+---
+
+### Example 1: Multimodal Strain Attribute Reasoning
+
+**Case ID:** MB-S019-3770  
+**Task:** Multimodal Strain Attribute Reasoning  
+**Difficulty:** Medium  
+
+**Question:**  
+> What is the maximum pH for growth for the strain MAH-28?
+
+**Input:**  
+- PDF segment: `S019`  
+- Relevant table images:
+
+<img src="examples/example_02/S019_I003.png" width="600">  
+<img src="examples/example_02/S019_I004.png" width="600">  
+
+**Few-shot Guidance:**  
+- "What is the maximum pH for growth? Growth was detected in the pH range 5.0 to 9.2, with an optimum at pH 7.0." → `<Answer>9.2</Answer>`  
+- "What is the maximum pH for growth? The strain can tolerate pH up to 8.5 under anaerobic conditions." → `<Answer>8.5</Answer>`  
+- "What is the maximum pH for growth? Optimal pH is 6.8–7.4, with no other pH range provided." → `<Answer>not provided</Answer>`
+
+**Expected Answer:**  
+```xml
+<Answer>10.0</Answer>
+````
+
+---
+
+### Example 2: Table-based Strain Attribute Extraction
+
+**Case ID:** MB-S092-233
+**Task:** Table-based Strain Attribute Extraction
+**Difficulty:** Easy
+
+**Question:**
+
+> What is the G+C content (mol%) for the strain OG-1?
+
+**Input:**
+
+* PDF segment: `S092`
+* Relevant table image:
+
+<img src="examples/example_01/S092_I004.png" width="600">  
+
+**Few-shot Guidance:**
+
+* "What is the G+C content (mol%)? The genomic G+C content was 63.4%." → `<Answer>63.4</Answer>`
+* "What is the G+C content (mol%)? G+C content ranged from 60–62%." → `<Answer>62.0</Answer>`
+* "What is the G+C content (mol%)? Measured value: 65.1 ± 0.2 mol%." → `<Answer>65.1</Answer>`
+
+**Expected Answer:**
+
+```xml
+<Answer>52</Answer>
+```
+
+---
+
+### Example 3: Figure-based Attribute Extraction
+
+**Case ID:** MB-S062-779
+**Task:** Figure-based Attribute Extraction
+**Difficulty:** Hard
+
+**Question:**
+
+> What is the shape for the strain EG?
+
+**Input:**
+
+* PDF segment: `S062`
+* Relevant figure image:
+
+<img src="examples/example_03/S062_I004.png" width="600">  
+
+**Few-shot Guidance:**
+
+* "What is the shape? Cells are rod-shaped with slightly curved ends and sometimes appear coccoid under stress." → `<Answer>rod-shaped, slightly curved, coccoid</Answer>`
+* "What is the shape? The organism exhibits a spiral shape and is highly motile." → `<Answer>spiral</Answer>`
+* "What is the shape? No morphological data were given regarding the shape." → `<Answer>not provided</Answer>`
+
+**Expected Answer:**
+
+```xml
+<Answer>rod-shaped</Answer>
+```
+
+---
+
 
 ## 🏆 Benchmark Results
 
