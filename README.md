@@ -87,8 +87,8 @@ These examples are simplified views of full benchmark cases and are intended for
 - PDF segment: `S019`  
 - Relevant table images:
 
-<img src="examples/example_02/S019_I003.png" width="600">  
-<img src="examples/example_02/S019_I004.png" width="600">  
+<img src="examples/example_01/S019_I003.png" width="600">  
+<img src="examples/example_01/S019_I004.png" width="600">  
 
 **Few-shot Guidance:**  
 - "What is the maximum pH for growth? Growth was detected in the pH range 5.0 to 9.2, with an optimum at pH 7.0." → `<Answer>9.2</Answer>`  
@@ -117,7 +117,7 @@ These examples are simplified views of full benchmark cases and are intended for
 * PDF segment: `S092`
 * Relevant table image:
 
-<img src="examples/example_01/S092_I004.png" width="600">  
+<img src="examples/example_02/S092_I004.png" width="600">  
 
 **Few-shot Guidance:**
 
