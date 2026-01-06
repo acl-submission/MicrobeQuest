@@ -180,6 +180,7 @@
       "input": {
         "pdf_index": "S019",
         "image_index": [
+          "S019_I003",
           "S019_I004"
         ],
         "is_full_pdf": false
